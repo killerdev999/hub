@@ -484,7 +484,6 @@ local function EnviarNotificacao(titulo, texto)
         local Players = game:GetService("Players")
         local LocalPlayer = Players.LocalPlayer
         
-        -- Garantia
         local GuiParent
         pcall(function()
             GuiParent = gethui and gethui() or game:GetService("CoreGui")
@@ -509,7 +508,6 @@ local function EnviarNotificacao(titulo, texto)
         NotifCorner.CornerRadius = UDim.new(0, 8)
         NotifCorner.Parent = NotifFrame
         
-        -- Ícone
         local IconBg = Instance.new("Frame")
         IconBg.Size = UDim2.new(0, 45, 0, 45)
         IconBg.Position = UDim2.new(0, 15, 0.5, -22.5)
@@ -534,7 +532,6 @@ local function EnviarNotificacao(titulo, texto)
         IconText.TextSize = 26
         IconText.Font = Enum.Font.SourceSansBold
         IconText.Parent = IconBg
-        
         
         local TitleLbl = Instance.new("TextLabel")
         TitleLbl.Size = UDim2.new(0, 200, 0, 20)
@@ -563,9 +560,8 @@ local function EnviarNotificacao(titulo, texto)
         local tweenIn = TweenService:Create(NotifFrame, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {Position = UDim2.new(1, -320, 1, -120)})
         tweenIn:Play()
         
-        task.wait(5) -- Tempo que a notificação fica na tela
+        task.wait(5)
         
-        -- Saída
         local tweenOut = TweenService:Create(NotifFrame, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.In), {Position = UDim2.new(1, 20, 1, -120)})
         tweenOut:Play()
         
