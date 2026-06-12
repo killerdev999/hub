@@ -18,7 +18,8 @@ local ScriptsPrincipal = {
     {Nome = "Fly Gui v3 (Universal)", URL = "https://rawscripts.net/raw/Universal-Script-Fly-gui-v3-78856", UsarTrue = false},
     {Nome = "Zenith Hub (Fish/The Forge)", URL = "https://zenithhub.cloud/panel/script", UsarTrue = false},
     {Nome = "Coquette Hub (Brookhaven)", URL = "https://raw.githubusercontent.com/Daivd977/Coquettekk/refs/heads/main/play", UsarTrue = false},
-    {Nome = "Universal Farm Hub Mobile (Jailbreak)", URL = "https://raw.githubusercontent.com/BlitzIsKing/UniversalFarm/main/Loader/Regular", UsarTrue = false}
+    {Nome = "Universal Farm Hub Mobile (Jailbreak)", URL = "https://raw.githubusercontent.com/BlitzIsKing/UniversalFarm/main/Loader/Regular", UsarTrue = false},
+    {Nome = "Achaotic Hub (Blade Ball)", URL = "https://raw.githubusercontent.com/AchaoticSoftworksCore/AchaoticSources/refs/heads/main/BladeBall/Main.luau", UsarTrue = false}
 }
 
 local function carregarAimbot() loadstring(game:HttpGet("https://pastebin.com/raw/N0LZ0tWJ"))() end
